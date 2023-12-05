@@ -1,0 +1,214 @@
+:root {
+   --second-font: "Segoe UI", Arial, sans-serif;
+
+   /* ===== Text-Color ===== */
+
+   --navbar-link-color: #000;
+   --title-color: #f1f1f1;
+   --project__subtitle-color: #fff;
+   --about__vacancy-color: rgb(0, 0, 0, 0.6);
+   --footer-color: #fff;
+   --btn-contact-color: #fff;
+
+   /* ===== BG-Color ===== */
+
+   --navbar-bg-color: #fff;
+   --header__span-br-bg-color: rgb(0, 0, 0, 0.75);
+   --project__subtitle-bg-color: #000;
+   --btn-about-bg-color: #f1f1f1;
+   --btn-contact-bg-color: #000;
+   --btn-bg-hover-color: rgb(158, 158, 158, 0.5);
+   --footer-bg-color: #000;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Verdana, sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+   font-weight: 400;
+   text-decoration: none;
+   list-style-type: none;
+   border: none;
+}
+
+.image {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+   padding: 8px 16px;
+   display: flex;
+   justify-content: space-between;
+
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+   background-color: var(--navbar-bg-color);
+}
+
+.navbar__list {
+   display: flex;
+}
+
+.navbar__link {
+   display: block;
+   padding: 8px 16px;
+   cursor: pointer;
+   letter-spacing: 4px;
+
+   color: var(--navbar-link-color);
+}
+
+.navbar__br {
+   font-weight: bolder;
+}
+
+/* ========== HEADER ========== */
+
+.header__container {
+   margin: 0 auto;
+   max-width: 1500px;
+   position: relative;
+}
+
+.header__content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.title {
+   font-family: var(--second-font);
+   font-size: 36px;
+   letter-spacing: 4px;
+   color: var(--title-color);
+}
+
+.header__span-br {
+   padding: 8px 16px;
+
+   font-weight: bolder;
+   background-color: var(--header__span-br-bg-color);
+}
+
+/* ========== SECTION ========== */
+
+.container {
+   margin: 0 auto;
+   padding: 48px 32px 0;
+   max-width: 1564px;
+}
+
+.subtitle {
+   margin-bottom: 15px;
+   padding-bottom: 16px;
+   border-bottom: 1px solid #f1f1f1;
+
+   font-family: var(--second-font);
+   font-size: 24px;
+}
+
+.grid__cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 16px;
+}
+
+.button {
+   margin-top: 15px;
+   padding: 8px 16px;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: var(--btn-bg-hover-color);
+}
+
+/* ----- PROJECT ----- */
+
+.project__subtitle {
+   margin-bottom: 42px;
+}
+
+.project__card {
+   position: relative;
+}
+
+.project__card-subtitle {
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   padding: 8px 16px;
+
+   color: var(--project__subtitle-color);
+   background-color: var(--project__subtitle-bg-color);
+}
+
+/* ----- ABOUT ----- */
+
+.about__text {
+   margin-bottom: 48px;
+}
+
+.about__cards-filter {
+   filter: grayscale(75%);
+}
+
+.about__name {
+   margin-top: 10px;
+   font-family: var(--second-font);
+   font-size: 24px;
+}
+
+.about__vacancy {
+   margin: 15px 0;
+   color: var(--about__vacancy-color);
+}
+
+.about__btn {
+   width: 100%;
+   background-color: var(--btn-about-bg-color);
+}
+
+/* ----- CONTACT ----- */
+
+.contact__input {
+   margin-top: 15px;
+   padding: 8px;
+   width: 100%;
+   border: 1px solid #ccc;
+}
+
+.contact__btn {
+   text-transform: uppercase;
+   color: var(--btn-contact-color);
+   background-color: var(--btn-contact-bg-color);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+   padding: 32px 0;
+   text-align: center;
+   background-color: var(--footer-bg-color);
+}
+
+.footer p {
+   color: var(--footer-color);
+}
+
+.footer__link {
+   text-decoration: underline;
+   color: var(--footer-color);
+}
