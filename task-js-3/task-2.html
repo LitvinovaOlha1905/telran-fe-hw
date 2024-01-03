@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/task-2.css">
+</head>
+
+<body>
+
+   <h2>Выберите курсы и их количество:</h2>
+
+   <!-- Форма выбора курсов -->
+   <form id="courseForm">
+      <label for="frontend">Frontend:</label>
+      <select id="frontend" onchange="calculateTotal()">
+         <option value="0">Выберите курс</option>
+         <option value="900">JavaScript</option>
+         <option value="500">TypeScript</option>
+         <option value="400">HTML/CSS</option>
+         <option value="800">React</option>
+         <option value="800">Python</option>
+      </select>
+      <input type="number" id="frontendQuantity" value="0" min="0"><br><br>
+
+      <label for="backend">Backend:</label>
+      <select id="backend" onchange="calculateTotal()">
+         <option value="0">Выберите курс</option>
+         <option value="600">PHP</option>
+         <option value="1000">Java</option>
+         <option value="900">NodeJS</option>
+      </select>
+      <input type="number" id="backendQuantity" value="0" min="0"><br><br>
+
+      <label for="design">Design:</label>
+      <select id="design" onchange="calculateTotal()">
+         <option value="0">Выберите курс</option>
+         <option value="700">Photoshop</option>
+         <option value="800">Figma</option>
+      </select>
+      <input type="number" id="designQuantity" value="0" min="0"><br><br>
+
+      <!-- Кнопка для расчета общей стоимости -->
+      <input type="button" value="Рассчитать общую стоимость" onclick="calculateTotal()" class="btn">
+   </form>
+
+   <!-- Общая стоимость -->
+   <p id="totalCost"></p>
+
+
+
+   <!-- <div class="container">
+      <h1 class="title">Courses</h1>
+      <div class="courses_container" id="basket">
+
+         <div class="course_container basket__item">
+            <p class="item">Frontend</p>
+            <p class="price" value="1500">1500$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class=" course_container basket__item">
+            <p class="item">Backend</p>
+            <p class="price">1500$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class="course_container basket__item">
+            <p class="item">Design</p>
+            <p class="price">1000$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class="course_container basket__item">
+            <p class="item">JavaScript</p>
+            <p class="price">1000$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class="course_container basket__item">
+            <p class="item">PHP</p>
+            <p class="price">750$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class="course_container basket__item">
+            <p class="item">Photoshop</p>
+            <p class="price">800$</p>
+
+            <div class="counter" data-counter>
+               <div class="btn counter__button counter__button-minus">-</div>
+               <div class="counter__input"><input type="text" disabled value="0"></div>
+               <div class="btn counter__button counter__button-plus">+</div>
+            </div>
+
+            <button class="btn" onclick="buy()">Buy</button>
+         </div>
+
+         <div class="course_container total_container">
+            <p class="total_sum">Total</p>
+            <p id="total_price">0$</p>
+         </div>
+
+      </div>
+   </div> -->
+
+
+
+
+
+
+   <script src="./js/task-2.js"></script>
+</body>
+
+</html>

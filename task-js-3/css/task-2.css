@@ -1,0 +1,79 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   background-color: #f4f4f4;
+}
+
+.container {
+   max-width: 576px;
+   margin: 20px auto;
+   background-color: #fff;
+   padding: 12px;
+}
+
+.btn {
+   padding: 6px 12px;
+   border: none;
+   background-color: #ddd;
+}
+
+.btn:hover {
+   background-color: #000;
+   color: #fff;
+}
+
+.result {
+   padding: 12px 0;
+   text-align: center;
+}
+
+/* ========== Задача 2 ========== */
+
+.course_container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 40px;
+   margin-top: 10px;
+}
+
+.item {
+   min-width: 100px;
+}
+
+.price {
+   min-width: 100px;
+}
+
+.counter {
+   display: flex;
+   align-items: center;
+   column-gap: 7px;
+   user-select: none;
+   /* чтобы не выделялись кнопки пользователем */
+}
+
+.counter__button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.counter__input {
+   width: 30px;
+}
+
+.counter__input input {
+   width: 100%;
+   border: none;
+   text-align: center;
+}
+
+.total_sum {
+   justify-content: end;
+}
